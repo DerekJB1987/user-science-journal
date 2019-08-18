@@ -27,7 +27,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Jane Student</a>
+      <a class="navbar-brand" href="index.html">Derek Benak</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -69,12 +69,12 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Blogging About Design</h1>
-            <h2 class="subheading">Excited to share my thoughts and findings
+            <h1>Content Experiments</h1>
+            <h2 class="subheading">A/B Testing with Google Analytics
             </h2>
             <span class="meta">Posted by
-              <a href="#">Jane Student</a>
-              on April 1, 2019</span>
+              <a href="#">Derek Benak</a>
+              on December 2, 2018</span>
           </div>
         </div>
       </div>
@@ -86,65 +86,150 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a
-            globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which
-            there is no center because every point, or none, is center — an equal earth which all men occupy as equals.
-            The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+          <p>This week’s task was about focusing on analyzing the progress on my running goals and to then determine a “Content Experiment” that I could run on my site to 
+            enhance the performance of my goal(s).</p>
 
-          <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning
-            back from science. The early warnings about technological dangers also come from science.</p>
+          <h2 class="section-heading">Analysis</h2>
 
-          <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set
-            eye on the earth.</p>
-
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her
-            protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not
-            help but love and cherish her.</p>
-
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will,
-            the experience most certainly changes your perspective. The things that we share in our world are far more
-            valuable than those which divide us.</p>
-
-          <h2 class="section-heading">The Final Frontier</h2>
-
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a
-            task to occupy the generations. And no matter how much progress one makes, there is always the thrill of
-            just beginning.</p>
-
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a
-            task to occupy the generations. And no matter how much progress one makes, there is always the thrill of
-            just beginning.</p>
-
-          <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow.
-            Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the
-            next ten.</blockquote>
-
-          <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a
-            historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-          <h2 class="section-heading">Reaching for the Stars</h2>
-
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a
-            marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so
-            delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a
-            man.</p>
+          <p>After reviewing my Google Analytics dashboard four days after setting up my original goal; nobody is completing my goal of simply clicking the URL in my User Science Journal Post. 
+            This could be attributed to the simple fact that my assigned peer review has not had time to review my post from last week, however, I cannot assume that and 
+            must proceed further with creating an A/B Testing experiment.</p>
 
           <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
+            <img class="img-fluid" src="img/ga_goal_overview.png" alt="">
           </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what
-            living is all about.</span>
+          <span class="caption text-muted">Google Analytics Goal Overview (Conversions report)</span>
 
-          <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to
-            explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone
-            before.</p>
 
-          <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth
-            to our nature, Man must explore, and this is exploration at its greatest.</p>
+          <p>I checked my dashboard again on Thursday and still showed 0 completed goals; this prompted me to reach out to my professor on Slack for assistance into identifying if 
+            I set up my goal incorrectly. We were able to troubleshoot it and discovered that somehow my Google Analytics dashboard was capturing the completed goals under events instead of goals. 
+            I am still unsure as to the reasoning behind this.</p>
 
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
+          <a href="#">
+            <img class="img-fluid" src="img/ga_events.png" alt="">
+          </a>
+          <span class="caption text-muted">Google Analytics Events Overview (Behavior report)</span>
+
+          <h2 class="section-heading">Goal Funnel Visualization</h2>
+
+          <p>It is unclear to see if people are even beginning to move down my goal funnel since the goal I set up last week is capturing these as events rather than goal completions,
+            however looking at my funnel visualization that only 25% of visitors will proceed to a post in my journal after landing on the homepage. Further analysis reveals 
+            that zero visitors who visit my site directly proceed to my most recent post where my goal is located.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_funnel_visual.png" alt="">
+          </a>
+          <span class="caption text-muted">Google Analytics Funnel Visualization - Conversions report</span>
+
+          <h2 class="section-heading">Changes</h2>
+
+          <p>After analyzing this data from the perspective of a potential first-time viewer, I think there are a combination of reasons for why viewers are not completing 
+            my goal(s) and staying on my site for long.</p>
+
+          <p>Firstly the image above illustrates to me that I am not generating enough interest to keep visitors on my site and explore other pages. In terms of my goal since 
+            it was originally intended to be a simple destination (click) goal it makes me believe that I need to add keywords onto each post since people will be searching for 
+            the value-added part of each post rather than reading the entire post, in my opinion.</p> 
+            
+          <p>It would make it much easier and time saving if I added a button or contrasting colors to grab the visitor's attention and almost "dare" them to click on the URL thereby completing my goal.</p>
+
+          <h2 class="section-heading">Experiment</h2>
+
+          <p>To help my visitors complete the goal I set up last week, I set-up an experiment using Google’s Optimize. A newly released tool that helps web developers and marketers 
+            increase visitor conversion rates and overall visitor satisfaction by testing different combinations of website content leading to a better user experience. This 
+            can be quickly explained as a new A/B testing service.</p>
+
+          <p><b>Set-up:</b> To begin setting up my experiment, I went into the Behavior report and clicked on experiments. Google has a Learn More option that a web developer has to 
+            click to access the Google Optimize dashboard. I hypothesize this isn’t being heavily marketed- right now is that it’s still in beta testing and Google doesn’t want to 
+            alienate users who are still comfortable with the old experiment process.Upon entering the dashboard, I had to create a new account which was simple since most 
+            of my Google Analytics account was imported in as default.</p>
+
+          <p>The next step was to create a new experience which uses the original URL for my post last week that has my goal in it using A/B testing.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_setup.png" alt="">
+          </a>
+          <span class="caption text-muted">Setting up A/B testing with Google Analytics</span>
+
+          <p>The next step was to create a variant from my original post, that required me to download and install the Optimize Chrome extension. This is automatically 
+            prompted upon clicking create variant. After installation is complete, then you return back to the Optimize dashboard and click Variant 1 and this will take you 
+            to a mock page for your original page. A/B testing is intended to be simple/subtle changes that are intended to see how they impact traffic. 
+            I changed the order of my goals/URLs to have 2016 Thanksgiving data first and 2017 Thanksgiving data second instead of 2017 Thanksgiving data on the top and 
+            2016 Thanksgiving data on the bottom.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_variantMenu.png" alt="">
+          </a>
+          <span class="caption text-muted">The Variant Menu for A/B Testing with Google Analytics</span>
+
+          <p>After I completed the changes referenced above after I clicked Save and Done then was returned to my Optimize Dashboard with my variant indicating one change 
+            from the original.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_variantCreated.png" alt="">
+          </a>
+          <span class="caption text-muted">A variant successfully created in Google Analytics for A/B testing</span>
+
+          <p>The next step was to install the Optimize code to run my experiment. To do this I had to link property which defaulted to my User Science Journal. There were 
+            code snippets that I had to copy/paste into my WordPress blog in the Header and Footer Scripts. This required me to replace my old Google Analytics code with this 
+            new code.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_optimizeStepOne.png" alt="">
+          </a>
+          <span class="caption text-muted">Google Optimize Code Snippet Step One</span>
+
+          <p>nsure that the variant testing is successful there is a second code snippet to minimize page flickering if JavaScript were to load the original page first 
+            rather than the variant due to algorithms.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_optimizeStepTwo.png" alt="">
+          </a>
+          <span class="caption text-muted">Google Optimize Code Snippet Step Two</span>
+
+          <p>This linked my content and now I had to create an experiment objective. I decided to create a custom objective rather than choose from a list.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_objectives.png" alt="">
+          </a>
+          <span class="caption text-muted">Objectives for A/B Testing</span>
+
+          <p>After I created my objectives, I had to run a system diagnostic to verify that I installed the Optimize Code correctly in my WordPress site and successfully 
+            setup my objectives for this A/B testing experiment.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_optimizeInstalled.png" alt="">
+          </a>
+          <span class="caption text-muted">Optimize System Diagnostic Result</span>
+
+          <p>At this point, all I had to do was start my experiment indicating that I was satisfied with all the changes, schedule and objectives for this A/B testing.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_variantSchedule.png" alt="">
+          </a>
+          <span class="caption text-muted">A/B Experiment Scehduled</span>
+
+          <h2 class="section-heading">Testing</h2>
+
+          <p>To avoid the error that I experienced when analyzing my data from last week, I logged into my Google Optimize account to verify that my experiment was running.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_experimentRunning.png" alt="">
+          </a>
+          <span class="caption text-muted">A/B Experiment Running</span>
+
+          <p>I followed my professor's example by copying the web address to my original post in an incognito browser. I opened it up three times, the first time gave me 
+            the variant and the third time eventually loaded the original post.</p>
+
+          <a href="#">
+            <img class="img-fluid" src="img/ga_variantPage.png" alt="">
+          </a>
+          <span class="caption text-muted">The Variant page shown to visitors</span>
+
+            <a href="#">
+              <img class="img-fluid" src="img/ga_originalPage.png" alt="">
+            </a>
+            <span class="caption text-muted">The original page</span>
+
         </div>
       </div>
     </div>
@@ -159,23 +244,15 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="#">
+                <a href="www.linkedin.com/in/derekjbenak" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
+                <a href="https://github.com/DerekJB1987" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
