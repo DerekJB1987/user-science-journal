@@ -41,15 +41,16 @@
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="post1.html">Design Analysis: Analyze for Usability</a>
-              <a class="dropdown-item" href="post2.html">Design Analysis: Usable Design Analysis</a>
-              <a class="dropdown-item" href="post3.html">Design Analysis: Usability Test</a>
-              <a class="dropdown-item" href="post4.html">Design Analysis: Usability Testing a Mobile Site</a>
-              <a class="dropdown-item" href="post5.html">Design Analysis: Evaluating for Accessibility</a>
-              <a class="dropdown-item" href="post6.html">Google Analytics: Just Add Analytics</a>
-              <a class="dropdown-item" href="post7.html">Google Analytics: Goooaaaal! (and Funnel)</a>
-              <a class="dropdown-item" href="post8.html">Google Analytics: Content Experiments</a>
-              <a class="dropdown-item" href="post9.html">Goal Experiment Summary Report</a>
+                <a class="dropdown-item" href="post1.html">Design Analysis: Analyze for Usability</a>
+                <a class="dropdown-item" href="post2.html">Design Analysis: Usable Design Analysis</a>
+                <a class="dropdown-item" href="post3.html">Design Analysis: Usability Test</a>
+                <a class="dropdown-item" href="post4.html">Design Analysis: Usability Testing a Mobile Site</a>
+                <a class="dropdown-item" href="post5.html">Design Analysis: Evaluating for Accessibility</a>
+                <a class="dropdown-item" href="post6.html">Accessibility: Video with Subtitles</a>
+                <a class="dropdown-item" href="post7.html">Google Analytics: Just Add Analytics</a>
+                <a class="dropdown-item" href="post8.html">Google Analytics: Goooaaaal! (and Funnel)</a>
+                <a class="dropdown-item" href="post9.html">Google Analytics: Content Experiments</a>
+                <a class="dropdown-item" href="post10.html">Goal Experiment Summary Report</a>
             </div>
           </li>
           <li class="nav-item">
@@ -139,28 +140,194 @@
 
           <h2 class="section-heading">WAVE Report</h2>
 
-          <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a
-            marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so
-            delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a
-            man.</p>
+          <p>At this point to verify my own analysis and identify anything that was missed. I submitted the Seattle Children's homepage URL through the 
+            <a href="http://wave.webaim.org/">WAVE Web Accessibility Tool</a> for throughness.
+          </p>
 
           <a href="#">
-            <img class="img-fluid" src="img/post-sample-image.jpg" alt="">
+            <img class="img-fluid" src="img/childrens_wave_report.png" alt="">
           </a>
-          <span class="caption text-muted">To go places and do things that have never been done before – that’s what
-            living is all about.</span>
+          <span class="caption text-muted">WAVE Summary Report</span>
 
-          <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to
-            explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone
-            before.</p>
+          <h4 class="section-heading">Errors</h4>
 
-          <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth
-            to our nature, Man must explore, and this is exploration at its greatest.</p>
+            <p><a href="#">
+                <img class="img-fluid" src="img/errors_summary.png" alt="">
+            </a>
+            <span class="caption text-muted">Summary of Errors</span>
+            </p>
 
-          <p>Placeholder text by
-            <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by
-            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>.</p>
-        </div>
+            <p>There were five instances where a linked image was missing the descriptive alternative text. 
+              This is a significant issue since a screen reader has no content to present to the user regarding the function of the link.
+            </p>
+
+            <p><b>How to fix:</b> add the appropriate alternative text that presents the content of the image or function of the link.</p>
+
+            <p>Lastly there were 9 instances where a link contained no text. 
+              This is another significant issue since when a link contains no text, 
+              the function or purpose of the link cannot be presented to the user and will result in confusion to users who use a screen reader or keyboard.
+            </p>
+
+            <p><b>How to fix:</b> simply remove the empty link or provide text within the link.</p>
+
+            <p>
+              <a href="#">
+                <img class="img-fluid" src="img/missing_links_body.png" alt="">
+              </a>
+              <span class="caption text-muted">Missing Links (Errors) in Body Section</span>
+          </p>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/missing_links_footer.png" alt="">
+            </a>
+              <span class="caption text-muted">Missing Links (Errors) in Footer</span>
+          </p>
+
+        <h4 class="section-heading">Alerts</h4>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/alerts_summary.png" alt="">
+            </a>
+            <span class="caption text-muted">Summary of Alerts</span>
+          </p>
+
+          <p>One instance where WAVE detected ‘Suspicious alternative text’ indicating the alt text is likely insufficient or contains extraneous information.</p>
+
+          <p>
+            <b>How to fix:</b> the alt text is used to indicate a Google Map image is used nearby and I hypothesize that is appropriate for screen readers since 
+            Google Maps are difficult to see clearly even for readers who are not visually impaired.
+          </p>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/suspicious_alt_text.png" alt="">
+            </a>
+              <span class="caption text-muted">Suspicious Alt Text Usage</span>
+          </p>
+
+          <p>An area that does bring forth concern is three instances where there are adjacent links directing to the same URL. 
+            This is seen in the following image where the link in the image and in the title for the section direct the visitor to the same page.
+          </p>
+
+          <p><b>How to fix:</b> combine the links or remove the redundant text or alt text so the web developer can use alt=”” in the image.</p>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/redundant_links.png" alt="">
+            </a>
+              <span class="caption text-muted">Redundant Links Detected</span>
+          </p>
+
+        <h4 class="section-heading">Features</h4>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/features_summary.png" alt="">
+            </a>
+            <span class="caption text-muted">Summary of Features</span>
+          </p>
+
+          <p>There was one instance where an alternative text was null or an empty (alt= “”). This matters for when an image doesn’t convey or the content of the image is 
+            conveyed elsewhere then the image should have an empty/null alternative text (alt=””) to ensure it’s ignored by a screen reader.
+          </p>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/empty_alt_text.png" alt="">
+            </a>
+            <span class="caption text-muted">Empty Alt Text</span>
+          </p>
+
+          <p><b>How to fix:</b> The image does not convey content since the content of the image is conveyed in nearby text: Featured Social Media right above the h1 element 
+            Follow Seattle Children’s on Instagram.
+          </p>
+        
+        <h4 class="section-heading">Structural Elements</h4>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/structure_elements_summary.png" alt="">
+            </a>
+            <span class="caption text-muted">Summary of Structural Elements</span>
+          </p>
+
+          <p> Three first level heading h1 elements are present, headings facilitate page navigation for users of assistive technologies. 
+              Typically h1 elements should contain the most important headings on the page such as document title. 
+          </p>
+
+          <p><b>How to fix:</b> Validating the text in question is truly a heading which on this page the h1 elements are:
+            <ol>
+              <li><b>Welcome to Seattle Children’s</b> div that is titled as “main-content” indicating that the web development team sees this div as the most 
+                important element on the page.</li>
+              <li>There are two feature stories in the homepage-section div that are also coded as h1 elements: <b>Erin Advocates for T-Cell Immunotherapy</b> 
+                and <b>Follow Seattle Children’s’ on Instagram.</b></li>
+            </ol>
+          </p>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/h1_element.png" alt="">
+            </a>
+            <span class="caption text-muted">h1 Elements</span>
+          </p>
+
+          <p><b>How to fix:</b> I don’t see a need to fix this as the web development team will be directed to indicate which sections are higher priority over others.
+          </p>
+
+          <p>There are multiple instances of the Seattle Children’s homepage using h2, h3 and h4 headings on the homepage that appear to be used properly.</p>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/h4_elements.png" alt="">
+            </a>
+            <span class="caption text-muted">Multiple h4 Heading Elements</span>
+          </p>
+
+          <p>Lastly there are 18 instances of using ordered lists on the main page that can help users of assistive technologies navigate within the lists on the page.</p>
+
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/unordered_lists.png" alt="">
+            </a>
+            <span class="caption text-muted">Unordered Lists in footer</span>
+          </p>
+        
+        <h4 class="section-heading">HTML5 and ARIA</h4>  
+        
+          <p>
+            <a href="#">
+              <img class="img-fluid" src="img/html5_aria_summary.png" alt="">
+            </a>
+            <span class="caption text-muted">Summary of HTML5 and ARIA</span>
+          </p>
+
+          <p>A header element or banner landmark is present identifying page introduction or navigation. Typically, around the site or page name, logo, top navigation or 
+            other header content. How to fix: This element does not need to be fixed since it is used properly on this webpage. 
+            nav element or navigation landmark is present which identifies a section of navigation links and can facilitate page semantics and navigation. 
+          </p>
+
+          <p><b>How to fix:</b> This element does not need to. Be fixed since it is being used properly on this webpage.</p>
+
+          <p>footer element or content info is present identifying a footer for the page and typically identifies authorship, related links, copyright date, etc.</p>
+
+          <p><b>How to fix:</b> This element does not need to. Be fixed since it is being used properly on this webpage.</p>
+
+          <p>An ARIA role, state or property is present. ARIA provides enhanced semantics and accessibility for web content.</p>
+
+        <h2 class="section-heading">Recommendations</h2>
+
+        <p>Correcting the 14 errors examined at the beginning of the WAVE report section is the first priority for improving accessibility for the webpage.
+          <ul>
+            <li>Add all appropriate alternative text that presents the content of the image or function of the links that were detected in the WAVE report.</li>
+            <li>Remove any empty links or provide proper text within the links.</li>
+          </ul>
+        </p>
+
+        <p>This should ensure that anyone visiting this webpage using a screen reader will not encounter any difficulties.</p>
+
+        </div> 
       </div>
     </div>
   </article>
