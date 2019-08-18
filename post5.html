@@ -27,7 +27,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Jane Student</a>
+      <a class="navbar-brand" href="index.html">Derek Benak</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
@@ -68,12 +68,12 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="post-heading">
-            <h1>Blogging About Design</h1>
-            <h2 class="subheading">Excited to share my thoughts and findings
+            <h1>Evaluating for Accessibility</h1>
+            <h2 class="subheading">Evaluating Accessibility for Seattle Children's
             </h2>
             <span class="meta">Posted by
-              <a href="#">Jane Student</a>
-              on April 1, 2019</span>
+              <a href="#">Derek Benak</a>
+              on November 5, 2019</span>
           </div>
         </div>
       </div>
@@ -85,43 +85,59 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a
-            globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which
-            there is no center because every point, or none, is center — an equal earth which all men occupy as equals.
-            The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
 
-          <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning
-            back from science. The early warnings about technological dangers also come from science.</p>
+          <p>This week I choose to evaluate Seattle Children’s site for accessibility. To fairly and accurately evaluate for accessibility, 
+            I decided to perform my analysis using the Principles of Accessibility as defined by Web Content Accessibility Guidelines 2.0 (WCAG 2.0) 
+            which lay the foundation necessary for anyone to access and use Web content.</p>
 
-          <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set
-            eye on the earth.</p>
+            <a href="#">
+              <img class="img-fluid" src="img/childrens_homepage.png" alt="">
+            </a>
+            
+          <p>After I perform my analysis using the WCAG 2.0 guidelines, I will test the website using WAVE (Web Accessibility Evaluation Tool) and compare my analysis to the WAVE report/summary.  
+            For this analysis – I also narrowed down my “manual” analysis to only the first principle in WCAG 2.0 – <b>Perceivable</b>.</p>
 
-          <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her
-            protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not
-            help but love and cherish her.</p>
+            <a href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0">WCAG 2.0 Reference</a>
 
-          <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will,
-            the experience most certainly changes your perspective. The things that we share in our world are far more
-            valuable than those which divide us.</p>
+          <ol>
+            <li>Perceivable – information and user interface components must be presentable to users in ways they can perceive.</li>
+          </ol>
 
-          <h2 class="section-heading">The Final Frontier</h2>
+          <p>It is understood that if any of these guidelines are false, then the users with disabilities will not use the Website. 
+            I used Google Chrome DevTools to perform my analysis.</p>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a
-            task to occupy the generations. And no matter how much progress one makes, there is always the thrill of
-            just beginning.</p>
+          <p>The first guideline Perceivable has four sections that I will highlight at a cursory level.</p>
 
-          <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a
-            task to occupy the generations. And no matter how much progress one makes, there is always the thrill of
-            just beginning.</p>
+          <h2 class="section-heading">1.1 - Text Alternatives</h2>
 
-          <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow.
-            Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the
-            next ten.</blockquote>
+          <p>I was able to see that all links in the navbar had href links a title that named what the link was.
+            <a href="#">
+              <img class="img-fluid" src="img/childrens_navbar.png" alt="">
+            </a>
+          </p>
 
-          <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a
-            historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+          <h2 class="section-heading">1.2 - Time-Based Media</h2>
 
-          <h2 class="section-heading">Reaching for the Stars</h2>
+          <p>The homepage had no audio or video media therefore does not apply.</p>
+
+          <h2 class="section-heading">1.3 - Adaptable</h2>
+
+          <p>The homepage uses ARIA landmarks to identify regions on the page while ordering the content in a seemingly meaningful sequence. 
+            The homepage uses text to communicate understanding and operating content that does not rely on solely on sensory characteristics.</p>
+
+          <h2 class="section-heading">1.4 - Distinguishable</h2>
+
+          <p>The homepage attempts to make it easier for users to see and hear content including separating the foreground from the background.</p>
+
+            <ul>
+              <li>Use of color – color is not used to convey information.</li>
+              <li>Audio control – there is no audio output on the main page.</li>
+              <li>Contrast – there is some use of contrast on the homepage and the WAVE report indicated 14 contrast errors.</li>
+              <li>Resize text – text is only resized dependent on the heading levels on the main page e.g. h1, h2, h3, and h4.</li>
+              <li>Text Spacing – line height, spacing following paragraphs/sections, letter spacing and word spacing appear to follow WCAG 2.0 guidelines.</li>
+            </ul>
+
+          <h2 class="section-heading">WAVE Report</h2>
 
           <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a
             marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so
@@ -158,23 +174,15 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <ul class="list-inline text-center">
             <li class="list-inline-item">
-              <a href="#">
+                <a href="www.linkedin.com/in/derekjbenak" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
                 </span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="#">
-                <span class="fa-stack fa-lg">
-                  <i class="fas fa-circle fa-stack-2x"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">
+                <a href="https://github.com/DerekJB1987" target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fas fa-circle fa-stack-2x"></i>
                   <i class="fab fa-github fa-stack-1x fa-inverse"></i>
