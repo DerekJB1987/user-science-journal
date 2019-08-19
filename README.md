@@ -1,5 +1,5 @@
 # [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)
-## Jane Student
+## Derek Benak
 ### User Science Journal
 
 
